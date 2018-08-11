@@ -23,13 +23,22 @@ namespace GraConsoleApp
         public void WypiszOpisGry()
         {
             Console.WriteLine("Gra polega na odgadnięciu liczby wylosowanej z podanego zakresu.");
+            Console.WriteLine();
         }
 
         public string WypiszStatystykiGry()
         {
-            TimeSpan dtDifference = new TimeSpan();
-            dtDifference = kontroler.ListaRuchow[kontroler.ListaRuchow.Count - 1].moment - kontroler.ListaRuchow[0].moment;
-            return string.Format($"Liczba prób: {kontroler.ListaRuchow.Count}\nCzas gry: {dtDifference.ToString(@"hh\:mm\:ss")}\nStatus gry: {kontroler.StatusGry}");
+            if (kontroler.ListaRuchow.Count != 0)
+            {
+                TimeSpan dtDifference = new TimeSpan();
+                //takie podejście powoduje, że w przypadku rezygnacji po 1 ruchu, czas będzie zawsze równy 00:00:00
+                dtDifference = kontroler.ListaRuchow[kontroler.ListaRuchow.Count - 1].moment - kontroler.ListaRuchow[0].moment;
+                return string.Format($"Liczba prób: {kontroler.ListaRuchow.Count}\nCzas gry: {dtDifference.ToString(@"hh\:mm\:ss")}\nStatus gry: {kontroler.StatusGry}");
+            }
+            else
+            {
+                return "Nie wykonałeś żadnego ruchu. Brak statystyk.";
+            }
         }
 
         public void WypiszHistorieGry()

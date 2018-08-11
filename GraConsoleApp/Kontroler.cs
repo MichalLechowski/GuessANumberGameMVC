@@ -51,11 +51,13 @@ namespace GraConsoleApp
 
                 string propAsString;
                 propAsString = Console.ReadLine();
-                int prop = -1;
+                int prop = -1; //na wypadek poddania się bez ruchu, inaczej do metody Propozycja przekazalibyśmy niezainicjalizowaną zmienną
 
                 if (propAsString == "poddaj")
                 {
                     g.Poddaj();
+                    Console.WriteLine("Prawidłowa odpowiedź to: {0}", g.Wylosowana);
+                    break;
                 }
                 else
                 {
