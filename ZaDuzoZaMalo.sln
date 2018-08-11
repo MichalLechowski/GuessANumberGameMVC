@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2042
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModelGraLib", "ModelGraLib\ModelGraLib.csproj", "{311B5A9A-C297-44A2-A068-C072416E16E7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GraConsoleApp", "GraConsoleApp\GraConsoleApp.csproj", "{2BDD1E62-ED38-44B2-A3F1-3F1B187B8B7A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GraWindowsFormsApp", "GraWindowsFormsApp\GraWindowsFormsApp.csproj", "{A8104A6C-4258-49BB-B583-25D604EFA101}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{311B5A9A-C297-44A2-A068-C072416E16E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{311B5A9A-C297-44A2-A068-C072416E16E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{311B5A9A-C297-44A2-A068-C072416E16E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{311B5A9A-C297-44A2-A068-C072416E16E7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2BDD1E62-ED38-44B2-A3F1-3F1B187B8B7A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2BDD1E62-ED38-44B2-A3F1-3F1B187B8B7A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2BDD1E62-ED38-44B2-A3F1-3F1B187B8B7A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2BDD1E62-ED38-44B2-A3F1-3F1B187B8B7A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A8104A6C-4258-49BB-B583-25D604EFA101}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A8104A6C-4258-49BB-B583-25D604EFA101}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A8104A6C-4258-49BB-B583-25D604EFA101}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A8104A6C-4258-49BB-B583-25D604EFA101}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2F2CF933-F743-42A8-84B3-60F1F544FCF9}
+	EndGlobalSection
+EndGlobal
